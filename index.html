@@ -141,7 +141,6 @@ const line_to_json = line => {
 const story = script.trim().split('\n')
 	.map(line_to_json)
 	.filter(x => x)
-	.slice(10)
 
 console.log(story)
 
