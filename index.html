@@ -194,7 +194,7 @@ document.querySelector('body').addEventListener('click', e => {
 
 	if (curr && curr.type === 'options') {
 		if (!displaying_options) return
-		if (e.toElement.className !== 'option') return
+		if (e.target.className !== 'option') return
 		OPTIONS.innerHTML = ''
 		displaying_options = false
 	}
